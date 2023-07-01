@@ -64,7 +64,7 @@ var elementsAnswer
 
 submitBtn.addEventListener("click", () => {
     if (questionCount == 5) {
-        quiz.innerHTML = (`your score ${marks} out of 5`)
+        quiz.innerHTML = (`<h2>your score ${marks} out of 5</h2><button onclick="location.reload()">reload</button> `)
         return;
     }
     elementsAnswer = document.getElementsByName("answer");
